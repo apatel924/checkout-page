@@ -1,0 +1,198 @@
+/* // back button css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html, body {
+  width: 1920px;
+  height: 1711px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white !important;
+  background: radial-gradient(
+        78.27% 114.34% at 60.01% 112.56%,
+        rgba(11, 11, 11, 0.7) 0%,
+        rgba(89, 89, 89, 0) 100%
+      ),
+    radial-gradient(
+        111.78% 111.23% at 108.49% 64.21%,
+        rgba(255, 0, 153, 0.7) 0%,
+        rgba(59, 89, 202, 0.126) 100%
+      ),
+    radial-gradient(
+        105.87% 105.87% at 4.16% 5.34%,
+        rgba(14, 21, 88, 0.7) 0%,
+        rgba(100, 100, 100, 0) 100% 
+      ),
+    #0d091d;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.back-button {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    left: 20px;
+    top: 20px;
+    background: linear-gradient(231.21deg, #4299FF 7.23%, #EE0BD7 101.2%);
+    box-shadow: 0px 9px 11px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow {
+    width: 14px;
+    height: 14px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-135deg); 
+  }
+
+/* update discord box css */
+
+.update-discord-box {
+  box-sizing: border-box;
+  position: absolute;
+  width: 670px;
+  height: 150px;
+  left: 125px;
+  top: 50px;
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, #FF1CF7 0%, rgba(238, 11, 215, 0.85) 100%);
+  border-image-slice: 1;
+  border-radius: 8px;
+}
+
+/* Payment info box css */
+
+.payment-info-box {
+  box-sizing: border-box;
+  position: absolute;
+  width: 670px;
+  height: 850px;
+  left: 125px;
+  top: 270px;
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, #FF1CF7 0%, rgba(238, 11, 215, 0.85) 100%);
+  border-image-slice: 1;
+  border-radius: 8px;
+}
+
+/* Checkout summary box */
+
+.checkout-summary-box {
+  box-sizing: border-box;
+  position: absolute;
+  width: 380px;
+  height: 850px;
+  left: 820px;
+  top: 270px;
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, #FF1CF7 0%, rgba(238, 11, 215, 0.85) 100%);
+  border-image-slice: 1;
+  border-radius: 8px;
+}
+
+
+.checkout-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.checkout-heading {
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.checkout-subheading {
+  color: white;
+  margin-bottom: 2em;
+}
+
+.checkout-page-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.checkout-heading {
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.checkout-subheading {
+  color: white;
+  margin-bottom: 2em;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+}
+
+.back-button p {
+  margin-left: 10px;
+  color: white;
+}
+
+/* Additional CSS */
+
+.payment-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.payment-info-box .credit-card-option,
+.payment-info-box .paypal-option,
+.payment-info-box .country-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-info-box input[type="text"] {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.payment-info-box .book-now-btn {
+  padding: 10px;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.payment-info-box .book-now-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
